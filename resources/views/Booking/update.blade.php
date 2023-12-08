@@ -19,7 +19,7 @@
     <select class="custom-select w-50" aria-label="Default select  example"  name="doctor_id">
         <option selected>{{ $booking->doctor?->name }}</option>
         @foreach ($doctors as $doctor)
-        <option value="{{ $doctor->id }}">{{ $doctor->name }}</option>
+        <option value="{{ $doctor->id }}">{{ $doctor->$name }}</option>
         @endforeach
       </select>
     </div>
